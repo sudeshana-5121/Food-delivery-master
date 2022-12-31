@@ -1,0 +1,173 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* CSS Variable */
+
+:root {
+    --navbar-height: 60px;
+}
+
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    height: 70px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+
+/* Navigation Bar: Logo nd Image */
+
+#logo {
+    margin: 12px 30px;
+}
+
+#logo img {
+    height: 60px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 23px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 10px;
+    height: 620px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url(../img.3.jpg)no-repeat center center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+
+
+/* Services Section */
+
+#services {
+    margin: 40px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 6px;
+    height: 500;
+    width: 400px;
+    background-color: rgb(245, 228, 228);
+    border-radius: 23px;
+}
+
+#services .box img {
+    height: 300px;
+    width: 350px;
+    margin: 23px;
+}
+
+#services p {
+    text-align: center;
+}
+
+#services {}
+
+#services {}
+
+
+/* Utility classes */
+
+.h-primary {
+    font-family: cursive;
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.h-secondary {
+    font-family: cursive;
+    font-size: 2.2rem;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 50px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+    font-size: 2.5rem;
+}
